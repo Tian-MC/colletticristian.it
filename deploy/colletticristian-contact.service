@@ -1,0 +1,22 @@
+# Installato da deploy/install.sh
+[Unit]
+Description=Form contatti di colletticristian.it verso Telegram
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+ExecStart=/usr/bin/node /opt/colletticristian-contact/contact.mjs
+EnvironmentFile=/etc/colletticristian/contact.env
+Restart=on-failure
+RestartSec=5
+
+DynamicUser=yes
+ProtectHome=yes
+PrivateDevices=yes
+ProtectKernelTunables=yes
+ProtectKernelModules=yes
+ProtectControlGroups=yes
+RestrictAddressFamilies=AF_INET AF_INET6 AF_UNIX
+
+[Install]
+WantedBy=multi-user.target
