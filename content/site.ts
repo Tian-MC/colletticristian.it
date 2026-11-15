@@ -16,6 +16,7 @@ export const site = {
     { label: "LinkedIn", href: "https://www.linkedin.com/in/cristian-colletti-0137b31b2/" },
     { label: "GitHub", href: "https://github.com/Tian-MC" },
   ],
+  repo: "https://github.com/Tian-MC/colletticristian.it",
 } as const;
 
 export const projectDomains: Partial<Record<ProjectKey, string>> = {

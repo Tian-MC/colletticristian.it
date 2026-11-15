@@ -151,7 +151,16 @@ export function Footer({ t, ids, navigation, hours, whatsappHref, privacyHref, n
               {t.privacy}
             </a>
           </p>
-          <p>{t.made}</p>
+          <p>
+            {t.made}
+            <span aria-hidden className="mx-2">
+              ·
+            </span>
+            <a href={site.repo} target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-violet">
+              {t.code}
+              <span className="sr-only"> {t.newTab}</span>
+            </a>
+          </p>
           <AnchorLink href="#" className="group inline-flex items-center gap-2 py-0.5 text-ink-soft transition-colors hover:text-violet">
             {t.backToTop}
             <span aria-hidden className="inline-block transition-transform duration-500 ease-silk group-hover:-translate-y-1">

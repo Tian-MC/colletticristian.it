@@ -348,6 +348,7 @@ export const it: Dictionary = {
     servicesTitle: "Servizi",
     contactTitle: "Scrivimi",
     made: "Fatto a mano, con cura.",
+    code: "Il codice è su GitHub",
     backToTop: "Torna su",
     privacy: "Privacy",
     profiles: "Mi trovi anche su",

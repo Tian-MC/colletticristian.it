@@ -199,6 +199,7 @@ export type Dictionary = {
     servicesTitle: string;
     contactTitle: string;
     made: string;
+    code: string;
     backToTop: string;
     privacy: string;
     profiles: string;

@@ -347,6 +347,7 @@ export const en: Dictionary = {
     servicesTitle: "Services",
     contactTitle: "Get in touch",
     made: "Handmade, with care.",
+    code: "The code is on GitHub",
     backToTop: "Back to top",
     privacy: "Privacy Policy",
     profiles: "Also on",
